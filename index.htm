@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <meta name="view-port" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -25,9 +25,40 @@
     
     
     @media only screen and (max-width:600px){
-      /*for mobile */
+      /*for mobile xs */
       [class*="col-"]{
       width:100%;
+    }
+    /*navbar-header*/
+    .container{
+      width:98%;
+      }
+      
+      .navbar-brand{
+        padding: 15px 15px;
+      }
+      .navbar-toggle .icon-bar{
+      border-color:#72149C;
+
+    }
+    .navbar-right li a {
+		font-size: 20px;
+		padding-bottom: 8px;
+		padding-top: 10px;
+	}
+  /*home section*/
+  h2{
+        font-size:40px;
+      }
+      .btn-order{
+      background-color:#72149c;
+      border-radius:4px;
+      padding: 8px 8px;
+      color:white;
+    }
+    .btn-order:hover{
+      background-color:#72149c;
+      color:white;
     }
       .row{
         padding:15px;
@@ -35,6 +66,14 @@
       div.try{
         background-color:red;
       }
+      div.main-nav{
+        width:100%;
+      }
+      
+      
+      
+
+
     }
     @media only screen and (min-width:768px){
       .col-1{width:8.33%; }
@@ -196,12 +235,18 @@
       background-color:#72149c;
       color:white;
     }
+    *{
+      box-sizing:border-box;
+    }
+    .bold1{
+      font-weight:bold;
+    }
     </style>
     <body data-spy="scroll" data-target=".navbar-collapse">
       <div class="main-nav navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand"><img src="https://res.cloudinary.com/damilare1957/image/upload/v1533131672/Vector.jpg" height="24" /> </a>
+            <a class="navbar-brand"><img src="https://res.cloudinary.com/damilare1957/image/upload/v1533131672/Vector.jpg" class="img-responsive" height="24" /> </a>
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse" >
          
       
@@ -227,12 +272,13 @@
           <div class="row top-margin1 " >
             <div class="col-4 col-md-4 bottom-margin " >
           
-              <h2 style="font-weight:bold">Fast, Secure,</br>Reliable</h2>
-              <p class=" top-margin" style="font-size:18px">we are everywhere, moving packages </br>at lightening speed</p>
+              <h2 class="bold1">Fast, Secure,</br>Reliable</h2>
+              <p class=" top-margin" style="font-size:32px">we are everywhere, moving packages at lightening speed</p>
               <a href="#orders" class="btn btn-order btn-md top-margin" style="font-size:12px">place order</a>
           </div>
           <div class="col-8 col-md-8 " >
-            <a href="https://res.cloudinary.com/damilare1957/image/upload/v1533131673/Group.jpg"><img src="https://res.cloudinary.com/damilare1957/image/upload/v1533131673/Group.jpg" width="600" class="img-responsive"/></a>
+            <a href="https://res.cloudinary.com/damilare1957/image/upload/v1533131673/Group.jpg"><img src="https://res.cloudinary.com/damilare1957/image/upload/v1533131673/Group.jpg
+" width="600" class="img-responsive"/></a>
           </div>
         </div>
       </header>
