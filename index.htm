@@ -221,6 +221,16 @@
   
      
     }
+    .status{
+     color:#72149C;
+  border-radius:4px;
+  background-color:#fff;
+  height:90px;
+  
+  font-size:60px;
+  line-height:90px;
+   font-family:Montserrat,'Times New Roman', Times, serif
+    }
     .form-icon{
       
   border-radius:4px;
@@ -284,6 +294,15 @@
     .bold1{
       font-weight:bold;
     }
+    #footercontainer{
+      height:300px;
+      padding-top:80px;
+      background-color:#72149c;
+      color:white;
+      font-weight:bold;
+      width:100%;
+      font-size:16px;
+    }
     </style>
     <body data-spy="scroll" data-target=".navbar-collapse">
       <div class="main-nav navbar-fixed-top">
@@ -304,8 +323,8 @@
               <li class="active"><a href="#Home">Home</a></li>
               <li ><a href="#services">Services</a></li>
               <li><a href="#orders">Orders</a></li>
-              <li><a href="#">Status</a></li>
-              <li><a href="#">Contacts</a></li>
+              <li><a href="#status">Status</a></li>
+              <li><a href="#contacts">Contacts</a></li>
             </ul>
           </div>
         </div>
@@ -317,7 +336,7 @@
           
               <h2 class="bold1">Fast, Secure,</br>Reliable</h2>
               <p class=" top-margin" style="font-size:32px">we are everywhere, moving packages at lightening speed</p>
-              <a href="#orders" class="btn btn-order btn-md top-margin" style="font-size:12px">place order</a>
+              <a href="#orders" class="btn btn-order btn-lg top-margin" style="font-size:12px">place order</a>
           </div>
           <div class="col-md-8 " >
             <a href="https://res.cloudinary.com/damilare1957/image/upload/v1533131673/Group.jpg"><img src="https://res.cloudinary.com/damilare1957/image/upload/v1533131673/Group.jpg
@@ -331,7 +350,7 @@
               <h3 class="text-center bold ">Services</h3>
               <p class="top-margin1 text-center font14">Have a look of what we offer</p>
           </div>
-          <div class="row top-margin1">
+          <div class="row top-margin2">
             <div class="col-md-4"  >
               <p class="service-icon"  >
                 <i class="fa fa-truck "></i>
@@ -355,8 +374,8 @@
             </div>
           </div>
           <div class="row">
-            <div class="text-center top-margin ">
-              <a href="#" class="btn btn-order btn-md" style="font-size:12px" >see more</a>
+            <div class="text-center top-margin2 ">
+              <a href="#orders" class="btn btn-order btn-xs btn-lg" style="font-size:12px" >see more</a>
             </div>
           </div>
     
@@ -414,39 +433,81 @@
               <h3 class="text-center bold">Place an Order</h3>
               <p class="top-margin1 text-center font14">Need to deliver, or pickup a package? Fill the form</p>
           </div>  
-          <div class="row top-margin2 bottom-margin">
+          <div class="row bottom-margin">
               
                 <form class="form-icon" role="form">
                   <div class="row " >
                     <div class="col-md-6 margin-bottom">
                       <input type="text" class="form-control"  name="Name" placeholder="Name"  />
                     </div>
-                    <div class="col-md-6 ">
-                      <input type="text" class="form-control "  name="phone" placeholder="phone"  />
+                    <div class="col-md-6 margin-bottom">
+                      <input type="email" class="form-control "  name="phone" placeholder="email"  />
                     </div>
-                  </div>
-                  <div class="row" >
+                  
+                  
                     <div class="col-md-6 margin-bottom ">
-                      <input type="email" class="form-control"  name="email" placeholder="email"/>
+                      <input type="text" class="form-control"  name="email" placeholder="phone"/>
                     </div>
-                    <div class=" col-md-6">
+                    <div class=" col-md-6 margin-bottom">
                       <input type="text" class="form-control"  name="Pick-up-address" placeholder="pick-up-address"/>
                     </div>
-                  </div>
+                    <div class="col-md-6 margin-bottom ">
+                      <input type="text" class="form-control"  name="Delivery-address" placeholder="Delivery Address"/>
+                    </div>
+                    <div class=" col-md-6 margin-bottom">
+                      <input type="text" class="form-control"  name="Delivery-time" placeholder="Delivery Time"/>
+                    </div>
                   
-                  <div class="row">
+                  
+                  
                     <div class=" col-md-12" >
                       <textarea rows="2" class="form-control"  column="5">Message</textarea>
                     </div>
                   </div>
                   <div class="wrapper top-margin2" >
-                    <button type="submit"   class="btn btn-order ">Place order</button>
+                    <button type="submit"   class="btn btn-order  btn-lg ">Place order</button>
                   </div>
                 </form>
               
           </div>
         </div>
       </section>
+      <section id="status">
+        <div class="container topcontainer" >
+          <div class="row top-margin1 ">
+              <h3 class="text-center bold">What People are saying</h3>      
+          </div>  
+          <div class="form-icon  " style="border:1px solid black">
+            <p class="status text-left" >
+              <i class="fa fa-quote-left"></i>
+            </p>
+              <a><img src="https://res.cloudinary.com/damilare1957/image/upload/v1533131672/Oval_3.jpg" /></a>
+              <p class=" text-center font14" style="margin-top:-20px;">Highly professional in handling their delivery services.<br/>very timely and effective</p>
+
+            <p class="status text-right" >
+              <i class="fa fa-quote-right"></i>
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer id="contacts">
+        <div class="container" id="footercontainer">
+            <div class="row">
+              <div class="col-md-3">
+                 <a class="navbar-brand"><img src="https://res.cloudinary.com/damilare1957/image/upload/v1534193224/vectorreal.jpg" style="background-color:#222222;"class="img-responsive" height="24" /> </a>
+           
+              </div>
+              <div class="col-md-3">
+                <ul style="display:block; text-decoration:none;">
+                  <li>PRODUCT</li>
+                  <li>Features</li>
+                  <li>Tracking</li>
+                  <li>Pricing</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </footer>
       <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       <script src="js/bootstrap.min.js"></script>
       <script>
