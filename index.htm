@@ -269,6 +269,7 @@
     }
     .wrapper{
     text-align:center;
+    margin:10px auto;
       
       
     }
@@ -295,13 +296,24 @@
       font-weight:bold;
     }
     #footercontainer{
-      height:300px;
-      padding-top:80px;
+      min-height:auto;
+      padding-top:30px;
       background-color:#72149c;
       color:white;
-      font-weight:bold;
+      
       width:100%;
       font-size:16px;
+    }
+    #myCarousel active{
+      background-color:red;
+    }
+    .list{
+      list-style:none;
+      
+      font-size:14px;
+    }
+    .list li{
+      padding:8px;
     }
     </style>
     <body data-spy="scroll" data-target=".navbar-collapse">
@@ -465,7 +477,7 @@
                     </div>
                   </div>
                   <div class="wrapper top-margin2" >
-                    <button type="submit"   class="btn btn-order  btn-lg ">Place order</button>
+                    <button type="submit"   class="btn btn-order  btn-md ">Place order</button>
                   </div>
                 </form>
               
@@ -481,9 +493,32 @@
             <p class="status text-left" >
               <i class="fa fa-quote-left"></i>
             </p>
-              <a><img src="https://res.cloudinary.com/damilare1957/image/upload/v1533131672/Oval_3.jpg" /></a>
-              <p class=" text-center font14" style="margin-top:-20px;">Highly professional in handling their delivery services.<br/>very timely and effective</p>
-
+            <div id="myCarousel" class="carousel slide" style="height:280px;" data-ride="carousel">
+              <ul class="carousel-indicators"  style="border:1px solid black;background-color:black">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="myCarousel" data-slide-to="1"></li>
+                <li data-target="myCarousel" data-slide-to="2"></li>
+                <li data-target="myCarousel" data-slide-to="3"></li>
+              </ul>
+              <div class="carousel-inner"  role="listbox">
+                <div class="item active">
+                  <img src="https://res.cloudinary.com/damilare1957/image/upload/v1533131672/Oval_3.jpg"style=" margin:auto"   /></a>
+                  <p class=" text-center font14" style="margin-top:-20px;">Highly professional in handling their delivery services.<br/>very timely and effective</p>
+                </div>
+                <div class="item ">
+                  <img src="https://res.cloudinary.com/damilare1957/image/upload/v1533131672/Oval_3.jpg" style=" margin:auto" />
+                  <p class=" text-center font14" style="margin-top:-20px;">Highly professional in handling their delivery services.<br/>very timely and effective</p>
+                </div>
+                <div class="item ">
+                  <img src="https://res.cloudinary.com/damilare1957/image/upload/v1533131672/Oval_3.jpg" style=" margin:auto"/>
+                  <p class=" text-center font14" style="margin-top:-20px;">Highly professional in handling their delivery services.<br/>very timely and effective</p>
+                </div>
+                <div class="item ">
+                  <img src="https://res.cloudinary.com/damilare1957/image/upload/v1533131672/Oval_3.jpg" style=" margin:auto" />
+                  <p class=" text-center font14" style="margin-top:-20px;">Highly professional in handling their delivery services.<br/>very timely and effective</p>
+                </div>
+              </div>
+            </div>
             <p class="status text-right" >
               <i class="fa fa-quote-right"></i>
             </p>
@@ -493,16 +528,31 @@
       <footer id="contacts">
         <div class="container" id="footercontainer">
             <div class="row">
-              <div class="col-md-3">
-                 <a class="navbar-brand"><img src="https://res.cloudinary.com/damilare1957/image/upload/v1534193224/vectorreal.jpg" style="background-color:#222222;"class="img-responsive" height="24" /> </a>
-           
+              <div class="col-md-3 col-md-offset-0.5 "  >
+                 <h1 class="text-center bold"style="color:#fff;width:50%;">Trans</h1>           
               </div>
               <div class="col-md-3">
-                <ul style="display:block; text-decoration:none;">
-                  <li>PRODUCT</li>
+                <ul class="list">
+                  <li style="font-weight:bold">PRODUCT</li>
                   <li>Features</li>
                   <li>Tracking</li>
                   <li>Pricing</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul class="list">
+                  <li style="font-weight:bold">SUPPORT</li>
+                  <li>Blog</li>
+                  <li>FAQ'S</li>
+                  <li>Support</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul class="list">
+                  <li style="font-weight:bold">COMPANY</li>
+                  <li>About</li>
+                  <li>Privacy Policy</li>
+                  <li>Terms of Service</li>
                 </ul>
               </div>
             </div>
