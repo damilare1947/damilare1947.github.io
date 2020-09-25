@@ -31,6 +31,7 @@
 <meta name="twitter:description" content="WE ARE THE NIGERIA’S SMARTEST HOME TUTORING HUB, WHERE THOUSANDS OF PARENTS LOCATE BEST-FIT PRIVATE LESSON TEACHER FOR THEIR CHILDREN ACROSS ALL SUBJECTS." />
 <meta name="twitter:title" content="NIGERIA’S SMARTEST HOME TUTORING HUB FOR PREP CLASSES" />
 <meta name="twitter:image" content="http://GlobalSamTutors.com.ng/wp-content/uploads/2016/12/bannnn.jpg" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 
     <title>GlobalSamTutors ||your perfect home and online tutor</title>
   </head>
@@ -639,7 +640,7 @@
         </div>
         <div class="row">
           <div class="col-md-10 m-auto">
-            <form action="https://demo.themeies.com/elearning/home-01.html">
+            <form action="" method="" id="contact-form">
               <div class="row">
                 <div class="form-group col-sm-6">
                   <label for="f_name">Full name</label>
@@ -669,6 +670,54 @@
         
       </div>
     </section>
+    <script>
+      const constraints = {
+          f_name: {
+              presence: true,
+              f_name:true
+          },
+          l_name:{
+            presence:true,
+            l_name:true
+          },
+          email: {
+              presence: true,
+              email: true
+          },
+          phone: {
+              presence: true,
+              phone: true
+          },
+          message: {
+              presence: true,
+              message:true
+          }
+      };
+   
+      const form = document.getElementById('contact-form');
+   
+      form.addEventListener('submit', function (event) {
+        const formValues = {
+            f_name: form.elements.f_name.value,
+            l_name:form.elements.l_name.value,
+            email: form.elements.email.value,
+            phone:form.elements.phone.value,
+            message: form.elements.message.value
+        };
+   
+        const errors = validate(formValues, constraints);
+   
+        if (errors) {
+          event.preventDefault();
+          const errorMessage = Object
+              .values(errors)
+              .map(function (fieldValues) { return fieldValues.join(', ')})
+              .join("\n");
+   
+          alert(errorMessage);
+        }
+      }, false);
+   </script>
     <!-- Contact section end -->
 
     <!-- Footer strat -->
